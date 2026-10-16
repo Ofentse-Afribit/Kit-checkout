@@ -1,0 +1,11 @@
+{
+  "name": "kitcheckout",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dashboard": "npm run dev -w apps/dashboard",
+    "mobile": "npm run start -w apps/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": { "node": ">=20.19.4" }
+}
